@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <link rel="stylesheet" href="pokeapi.css">
+</head>
+<body>
+
+    <a href="../index.html" class="back">
+        ⬅ Volver
+    </a>
+
+    <div class="container">
+
+        <h1>POKÉDEX</h1>
+
+        <input
+        type="text"
+        id="pokemonName"
+        placeholder="Ejemplo: pikachu">
+
+        <button onclick="buscarPokemon()">
+            Buscar
+        </button>
+
+        <div class="card" id="card">
+
+            <img id="pokemonImg">
+
+            <h2 id="pokemonTitle"></h2>
+
+            <p id="pokemonId"></p>
+
+            <p id="pokemonType"></p>
+
+            <p id="pokemonHeight"></p>
+
+            <p id="pokemonWeight"></p>
+
+            <p id="pokemonAbilities"></p>
+
+            <div id="stats"></div>
+
+        </div>
+
+    </div>
+
+    <script src="pokeapi.js"></script>
+
+</body>
+</html>
