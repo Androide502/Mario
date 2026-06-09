@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario NES</title>
+
+    <link rel="stylesheet" href="mario.css">
+</head>
+<body>
+
+    <!-- HUD -->
+
+    <div class="hud">
+
+        <div>
+            MARIO <br>
+            000100
+        </div>
+
+        <div>
+            COINS <br>
+            x00
+        </div>
+
+        <div>
+            WORLD <br>
+            1-1
+        </div>
+
+        <div>
+            TIME <br>
+            371
+        </div>
+
+    </div>
+
+    <!-- CAMARA -->
+
+    <div class="camera">
+
+    <!-- JUEGO -->
+
+    <div class="game">
+
+        <!-- NUBES -->
+
+        <img src="img/cloud.png" class="cloud c1">
+        <img src="img/cloud.png" class="cloud c2">
+        <img src="img/cloud.png" class="cloud c3">
+        <img src="img/cloud.png" class="cloud c4">
+
+        <!-- ARBUSTOS -->
+
+        <img src="img/bush.png" class="bush b1">
+        <img src="img/bush.png" class="bush b2">
+        <img src="img/bush.png" class="bush b3">
+
+        <!-- MONTAÑAS -->
+
+        <img src="img/hill.png" class="hill h1">
+        <img src="img/hill.png" class="hill h2">
+
+        <!-- BLOQUES -->
+
+        <img src="img/block.png" class="block q1">
+        <img src="img/block.png" class="block q2">
+        <img src="img/block.png" class="block q3">
+
+        <!-- LADRILLOS -->
+
+        <img src="img/brick.png" class="brick br1">
+        <img src="img/brick.png" class="brick br2">
+        <img src="img/brick.png" class="brick br3">
+        <img src="img/brick.png" class="brick br4">
+        <img src="img/brick.png" class="brick br5">
+        <img src="img/brick.png" class="brick br6">
+
+        <!-- MONEDAS -->
+
+        <img src="img/coin.png" class="coin ccoin1">
+        <img src="img/coin.png" class="coin ccoin2">
+        <img src="img/coin.png" class="coin ccoin3">
+        <img src="img/coin.png" class="coin ccoin4">
+
+        <!-- TUBOS -->
+
+        <img src="img/pipe.png" class="pipe pipe1">
+        <img src="img/pipe.png" class="pipe pipe2">
+        <img src="img/pipe.png" class="pipe pipe3">
+
+        <!-- GOOMBAS -->
+
+        <img src="img/goomba.png" class="goomba g1">
+        <img src="img/goomba.png" class="goomba g2">
+        <img src="img/goomba.png" class="goomba g3">
+
+        <!-- PLATAFORMAS -->
+
+        <div class="platform p1"></div>
+
+        <div class="platform p2"></div>
+
+        <!-- BANDERA -->
+
+        <div class="flagpole"></div>
+
+        <div class="flag"></div>
+
+        <!-- CASTILLO -->
+
+        <img src="img/castle.png" class="castle">
+
+        <!-- PISO -->
+
+        <div class="ground"></div>
+
+        <!-- MARIO -->
+
+        <img src="img/mario.png"
+        class="mario"
+        id="mario">
+
+    </div>
+
+    </div>
+
+    <!-- GAME OVER -->
+
+    <div class="gameOver" id="gameOver">
+
+        <h1>GAME OVER</h1>
+
+        <button onclick="restartGame()">
+            RESTART
+        </button>
+
+    </div>
+
+    <!-- AUDIO -->
+
+    <audio autoplay loop>
+        <source src="audio/mario.mp3">
+    </audio>
+
+    <audio id="coinSound">
+        <source src="audio/coin.mp3">
+    </audio>
+
+    <script src="mario.js"></script>
+
+</body>
+</html>
