@@ -1,0 +1,58 @@
+body{
+
+    margin:0;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#111;
+
+    font-family:Arial;
+}
+
+.menu{
+    text-align:center;
+}
+
+h1{
+    color:white;
+
+    margin-bottom:40px;
+
+    font-size:60px;
+}
+
+a{
+
+    display:block;
+
+    width:300px;
+
+    margin:20px auto;
+
+    padding:20px;
+
+    background:#222;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:15px;
+
+    font-size:25px;
+
+    transition:0.3s;
+}
+
+a:hover{
+
+    transform:scale(1.1);
+
+    background:#444;
+}
